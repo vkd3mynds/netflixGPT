@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies"
+import MainContainer from './MainContainer';
+import SecondaryContainer from './SecondaryContainer';
 
 const Browse = () => {
 
@@ -9,8 +11,18 @@ const Browse = () => {
     <>
   
     <Header/>
-      
-      <div>Main Page</div>
+      {/* 
+        Main Conatiner
+          - VideoBackground
+          - VideoTitle
+        Secondary Conatiner
+          -Movieslist * n
+          -Cards * n
+       */}
+       <main className=''>
+       <MainContainer/>
+       <SecondaryContainer/>
+       </main>
     </>
   );
 }
