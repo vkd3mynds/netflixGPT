@@ -1,8 +1,14 @@
 import React from "react";
+import Body from "./components/Body";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 const App = ()=>{
     return(
         <>
-        <h1 className="text-blue-700 text-5xl">WEBPACK FILES</h1>
+        <Provider store={appStore}>
+             <Body/>
+        </Provider>
+        
         </>
     )
 }
